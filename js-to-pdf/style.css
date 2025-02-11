@@ -15,14 +15,14 @@ input {
 }
 
 .input-zone {
-  width: 10%;
-  height: 10%;
+  width: 100px;
+  height: 100px;
 }
 
 #js-input-zone {
-  text-align: left;
+  float: left;
 }
 
 #pdf-input-zone {
-  text-align: center;
+  float: left;
 }
