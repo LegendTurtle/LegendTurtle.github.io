@@ -2,6 +2,7 @@ const JSdropZone = document.getElementById("js-input-zone");
 const JSinput = document.getElementById("js-input");
 
 let js_file;
+let pdf_file;
 
 let is_js_received;
 let is_pdf_received;
