@@ -4,12 +4,20 @@ const JSinput = document.getElementById("js-input");
 let js_file;
 let pdf_file;
 
+let js_code;
+let pdf_code;
+
 function js_click() {
   JSinput.click();
 }
 function js_receive() {
   js_file = JSinput.files[0];
-  console.log(js_file);
+  const js_reader = new FileReader();
+  reader.readAsText(js_file);
+  reader.onload = () => {
+    js_code = reader.result;
+    console.log(js_code);
+  };
 }
 
 JSdropZone.addEventListener("click", js_click);
