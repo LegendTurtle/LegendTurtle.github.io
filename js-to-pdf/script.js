@@ -15,6 +15,7 @@ function js_recieved(){
 }
 
 JSdropZone.addEventListener('drop', ev => {
+    ev.preventDefault()
     js_file = ev.dataTransfer.files[0]
     js_recieved();
 })
