@@ -1,3 +1,8 @@
 body {
-    color: #18191d;
+    background-color: #282e33;
+}
+h1 {
+    color: #8d939e;
+    font-size: 48px;
+    font-family: cursive, sans-serif;
 }
