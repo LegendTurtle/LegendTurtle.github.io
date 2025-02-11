@@ -1,15 +1,28 @@
 body {
-    background-color: #282e33;
+  background-color: #282e33;
 }
 
 h1 {
-    color: #8d939e;
-    font-size: 48px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
-    text-align: center;
+  color: #8d939e;
+  font-size: 48px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Verdana, sans-serif;
+  text-align: center;
 }
 
-.skrepka {
-    width: 10%;
-    height: 10%;
+input {
+  display: none;
+}
+
+.input-zone {
+  width: 10%;
+  height: 10%;
+}
+
+#js-input-zone {
+  text-align: left;
+}
+
+#pdf-input-zone {
+  text-align: center;
 }
