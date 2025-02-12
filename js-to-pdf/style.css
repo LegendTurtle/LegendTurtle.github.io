@@ -14,15 +14,13 @@ input {
   display: none;
 }
 
+#inputs {
+  text-align: center;
+}
+
 .input-zone {
   width: 100px;
   height: 100px;
-}
-
-#js-input-zone {
   float: left;
-}
-
-#pdf-input-zone {
-  float: left;
+  text-align: center;
 }
