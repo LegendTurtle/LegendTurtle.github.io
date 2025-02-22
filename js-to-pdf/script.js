@@ -2,12 +2,18 @@ const JSdropZone = document.getElementById("js-input-zone");
 const JSinput = document.getElementById("js-input");
 const PDFdropZone = document.getElementById("pdf-input-zone");
 const PDFinput = document.getElementById("pdf-input");
+const startButton = document.getElementsByTagName("button");
+
+let defaultPdf;
 
 let js_file;
 let pdf_file;
 
 let js_code;
 let pdf_code;
+
+let is_js_receive = false;
+let is_pdf_receive = false;
 
 function js_click() {
   JSinput.click();
@@ -24,6 +30,7 @@ function js_receive() {
     js_code = js_reader.result;
     console.log(js_code);
   };
+  is_js_receive = true;
 }
 function pdf_receive() {
   pdf_file = PDFinput.files[0];
@@ -33,8 +40,15 @@ function pdf_receive() {
     pdf_code = pdf_reader.result;
     console.log(pdf_code);
   };
+  is_pdf_receive = true;
+}
+function embed() {
+  if (is_js_receive && is_pdf_receive) {
+    let request = new XMLHttpRequest();
+  }
 }
 
+startButton.addEventListener("click", embed);
 JSdropZone.addEventListener("click", js_click);
 JSinput.addEventListener("change", js_receive);
 PDFdropZone.addEventListener("click", pdf_click);
