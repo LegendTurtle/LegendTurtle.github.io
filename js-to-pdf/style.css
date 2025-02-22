@@ -19,8 +19,14 @@ input {
 }
 
 .input-zone {
+  display: flex;
+  justify-content: center;
   width: 100px;
   height: 100px;
   float: left;
   text-align: center;
+}
+
+p {
+  color: #8d939e;
 }
