@@ -26,6 +26,7 @@ input {
   float: left;
   text-align: center;
   font-size: 36px;
+  margin: 0px;
 }
 
 p {
