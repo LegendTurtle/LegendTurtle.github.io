@@ -16,11 +16,11 @@ input {
 
 #inputs {
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .input-zone {
-  display: flex;
-  justify-content: center;
   width: 100px;
   height: 100px;
   float: left;
