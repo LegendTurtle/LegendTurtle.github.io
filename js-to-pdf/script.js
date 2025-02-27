@@ -33,11 +33,10 @@ function embed() {
       result =
         request.responseText.slice(0, 394) +
         js_code +
-        defaultPdf.slice(437, -1);
+        request.responseText.slice(437, -1);
       console.log(result);
     };
     request.send(null);
-    console.log(defaultPdf);
   }
 }
 
