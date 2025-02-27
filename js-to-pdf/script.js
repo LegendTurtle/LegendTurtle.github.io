@@ -33,7 +33,7 @@ function embed() {
         request.responseText.slice(0, 360) +
         js_code +
         request.responseText.slice(403, -1);
-      document.getElementById("output").textContent = result;
+      document.getElementById("output").innerText = result;
     };
     request.send(null);
     js_file = null;
