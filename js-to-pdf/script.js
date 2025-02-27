@@ -36,8 +36,6 @@ function embed() {
       document.getElementById("output").innerText = result;
     };
     request.send(null);
-    js_file = null;
-    js_code = null;
     is_js_receive = false;
   }
 }
