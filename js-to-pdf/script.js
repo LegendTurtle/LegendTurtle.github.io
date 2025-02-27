@@ -30,12 +30,14 @@ function embed() {
       true
     );
     request.onload = function () {
-      defaultPdf = request.responseText;
+      result =
+        request.responseText.slice(0, 394) +
+        js_code +
+        defaultPdf.slice(437, -1);
+      console.log(result);
     };
     request.send(null);
     console.log(defaultPdf);
-    result = defaultPdf.slice(0, 394) + js_code + defaultPdf.slice(437, -1);
-    console.log(result);
   }
 }
 
