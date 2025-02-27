@@ -35,14 +35,14 @@ function embed() {
         request.responseText.slice(0, 360) +
         js_code +
         request.responseText.slice(403, -1);
+      document.getElementById("copy").onclick = function () {
+        navigator.clipboard.writeText(result);
+      };
     };
     request.send(null);
     is_js_receive = false;
 
     document.getElementById("result").style.display = "flex";
-    document.getElementById("copy").onclick = function () {
-      navigator.clipboard.writeText(result);
-    };
   }
 }
 
