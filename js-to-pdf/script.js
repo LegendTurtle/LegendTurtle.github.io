@@ -27,7 +27,7 @@ function embed() {
     let request = new XMLHttpRequest();
     request.open(
       "GET",
-      "https://www.legendturtle.github.io/js-to-pdf/default.pdf",
+      "https://legendturtle.github.io/js-to-pdf/default.pdf",
       true
     );
     request.onload = function () {
