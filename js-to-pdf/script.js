@@ -24,7 +24,11 @@ function js_receive() {
 function embed() {
   if (is_js_receive) {
     let request = new XMLHttpRequest();
-    request.open("GET", "default.pdf", true);
+    request.open(
+      "GET",
+      "https://legendturtle.github.io/js-to-pdf/default.pdf",
+      true
+    );
     request.onload = function () {
       defaultPdf = request.responseText;
     };
