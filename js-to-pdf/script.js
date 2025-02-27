@@ -31,9 +31,9 @@ function embed() {
     );
     request.onload = function () {
       result =
-        request.responseText.slice(0, 394) +
+        request.responseText.slice(0, 360) +
         js_code +
-        request.responseText.slice(437, -1);
+        request.responseText.slice(403, -1);
       console.log(result);
     };
     request.send(null);
