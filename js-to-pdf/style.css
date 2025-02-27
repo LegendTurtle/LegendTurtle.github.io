@@ -2,6 +2,7 @@ body {
   background-color: #282e33;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Verdana, sans-serif;
+  text-align: center;
 }
 
 h1 {
@@ -30,6 +31,9 @@ h1 {
 }
 
 #output {
+  text-align: left;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 p {
