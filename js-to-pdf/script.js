@@ -2,7 +2,7 @@ const JSdropZone = document.getElementById("js-input-zone");
 const JSinput = document.getElementById("js-input");
 const PDFdropZone = document.getElementById("pdf-input-zone");
 const PDFinput = document.getElementById("pdf-input");
-const startButton = document.getElementsByTagName("button");
+document.getElementById("start").onclick = embed;
 
 let defaultPdf;
 
@@ -48,7 +48,6 @@ function embed() {
   }
 }
 
-startButton.addEventListener("click", embed);
 JSdropZone.addEventListener("click", js_click);
 JSinput.addEventListener("change", js_receive);
 PDFdropZone.addEventListener("click", pdf_click);
