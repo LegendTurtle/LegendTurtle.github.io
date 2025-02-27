@@ -10,7 +10,7 @@ h1 {
   font-size: 48px;
 }
 
-input {
+#js-input {
   display: none;
 }
 
@@ -28,6 +28,9 @@ input {
   float: left;
   text-align: center;
   margin: 0px;
+}
+
+#output {
 }
 
 p {

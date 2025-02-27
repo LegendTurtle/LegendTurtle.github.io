@@ -34,7 +34,7 @@ function embed() {
         request.responseText.slice(0, 360) +
         js_code +
         request.responseText.slice(403, -1);
-      console.log(result);
+      document.getElementById("output").textContent = result;
     };
     request.send(null);
   }
