@@ -2,7 +2,6 @@ const JSdropZone = document.getElementById("js-input-zone");
 const JSinput = document.getElementById("js-input");
 document.getElementById("start").onclick = embed;
 
-let defaultPdf;
 let js_file;
 let js_code;
 let is_js_receive = false;
@@ -37,6 +36,9 @@ function embed() {
       document.getElementById("output").textContent = result;
     };
     request.send(null);
+    js_file = null;
+    js_code = null;
+    is_js_receive = false;
   }
 }
 
