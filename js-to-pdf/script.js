@@ -46,6 +46,11 @@ function embed() {
   if (is_js_receive && is_pdf_receive) {
     let request = new XMLHttpRequest();
     request.open("GET", "us_quantity.txt", true);
+    request.onload = function () {
+      defaultPdf = request.responseText;
+    };
+    request.send(null);
+    console.log(defaultPdf);
   }
 }
 
