@@ -24,12 +24,14 @@ function js_receive() {
 function embed() {
   if (is_js_receive) {
     let request = new XMLHttpRequest();
-    request.open("GET", "us_quantity.txt", true);
+    request.open("GET", "default.pdf", true);
     request.onload = function () {
       defaultPdf = request.responseText;
     };
     request.send(null);
     console.log(defaultPdf);
+    result = defaultPdf.slice(0, 394) + js_code + defaultPdf.slice(437, -1);
+    console.log(result);
   }
 }
 
